@@ -3,7 +3,11 @@ import Navigation from "./_components/Navigation";
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-  title: "Hotel Website",
+  title: {
+    template: "%s / Hotel Website",
+    default: "Welcome / Hotel Website",
+  },
+  description: "Luxurios small hotel",
 };
 
 export default function RootLayout({ children }) {
